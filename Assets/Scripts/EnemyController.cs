@@ -24,8 +24,8 @@ public class EnemyController : MonoBehaviour
 
         linkMover = GetComponent<AgentLinkMover>();
 
-        //linkMover.OnLinkStart += HandleLinkStart;
-        //linkMover.OnLinkEnd += HandleLinkEnd;
+        linkMover.OnLinkStart += HandleLinkStart;
+        linkMover.OnLinkEnd += HandleLinkEnd;
     }
 
     private void HandleLinkStart()
