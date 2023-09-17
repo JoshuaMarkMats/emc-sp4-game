@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
     }
 
    
-    void Start()
+    public void StartChasing()
     {
         StartCoroutine(followTarget());
     }

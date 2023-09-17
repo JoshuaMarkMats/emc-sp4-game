@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectPool
 {
-    // Start is called before the first frame update
 
     private PoolableObject prefab;
     private List<PoolableObject> availableObjects;
