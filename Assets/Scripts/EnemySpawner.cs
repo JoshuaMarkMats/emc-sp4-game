@@ -89,7 +89,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-
     public enum SpawnMethod
     {
         RoundRobin,

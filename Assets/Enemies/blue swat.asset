@@ -19,7 +19,7 @@ MonoBehaviour:
   AreaMask: -1
   AvoidancePriority: 50
   BaseOffset: 0
-  Height: 2
+  Height: 1.9
   ObstacleAvoidanceType: 1
   Radius: 0.5
   Speed: 1.2
