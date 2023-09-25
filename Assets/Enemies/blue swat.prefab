@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6689789921093720551, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: enemyScriptableObject
+      value: 
+      objectReference: {fileID: 11400000, guid: d4595403116cbd34eae37e793a8b5f78, type: 2}
     - target: {fileID: 2739393969973136270, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: animator
       value: 
