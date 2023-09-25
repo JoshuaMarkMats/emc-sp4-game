@@ -21,7 +21,15 @@ PrefabInstance:
       value: tall enemi
       objectReference: {fileID: 0}
     - target: {fileID: 8722582321334250829, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722582321334250829, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722582321334250829, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8722582321334250829, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}

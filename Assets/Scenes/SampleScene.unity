@@ -874,11 +874,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 201860342}
-  numberOfEnemiesToSpawn: 5
+  numberOfEnemiesToSpawn: 10
   SpawnDelay: 1
   enemyPrefab:
   - {fileID: -6689789921093720551, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
   - {fileID: 6528298188489481406, guid: 7095ba097dc2afd46968680c8ef6a205, type: 3}
+  - {fileID: 4544240094007878049, guid: 5412d109a22eb0c40a3d7f58c8363d81, type: 3}
   enemySpawnMethod: 0
 --- !u!4 &658180365
 Transform:
