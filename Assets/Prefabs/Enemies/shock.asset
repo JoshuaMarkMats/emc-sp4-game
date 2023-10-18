@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92b7dbe0f47a7c40a0ee555b47004e6, type: 3}
   m_Name: shock
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
+  attackCooldown: 1
+  damage: 5
+  attackRadius: 1.5
   AIUpdateInterval: 0.5
   Acceleration: 8
   AngularSpeed: 120

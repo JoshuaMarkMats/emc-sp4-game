@@ -80,7 +80,8 @@ public class EnemySpawner : MonoBehaviour
                 enemy.agent.Warp(hit.position);
                 enemy.movement.target = player;
                 enemy.agent.enabled = true;
-                enemy.movement.StartChasing();
+                enemy.setupHealth();
+                enemy.movement.StartChasing();              
             }
             else
             {

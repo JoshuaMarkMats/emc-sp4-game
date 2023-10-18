@@ -8,6 +8,9 @@ public class EnemyScriptableObject : ScriptableObject
 {
     //Stats
     public int health = 100;
+    public float attackCooldown = 1f;
+    public int damage = 5;
+    public float attackRadius = 1.5f;
 
     //NavMesh Configs
     public float AIUpdateInterval = 0.1f;
