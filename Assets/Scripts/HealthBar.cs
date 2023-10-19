@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     private Slider healthBar;
-    [SerializeField]
     private Transform cam;
 
     //public virtual void OnEnable()

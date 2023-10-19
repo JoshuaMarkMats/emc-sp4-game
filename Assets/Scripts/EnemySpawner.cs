@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -12,11 +13,15 @@ public class EnemySpawner : MonoBehaviour
     public List<Enemy> enemyPrefab = new List<Enemy>();
     public SpawnMethod enemySpawnMethod = SpawnMethod.RoundRobin;
 
+    [SerializeField]
+    public UnityEvent enemyDiedEvent= new UnityEvent();
+
     private NavMeshTriangulation triangulation;
     private Dictionary<int, ObjectPool> enemyObjectPool = new Dictionary<int, ObjectPool>();
 
     public void Awake()
     {
+
         for (int i = 0; i<enemyPrefab.Count; i++)
         {
             enemyObjectPool.Add(i, ObjectPool.CreateInstance(enemyPrefab[i], numberOfEnemiesToSpawn));
@@ -80,6 +85,7 @@ public class EnemySpawner : MonoBehaviour
                 enemy.agent.Warp(hit.position);
                 enemy.movement.target = player;
                 enemy.agent.enabled = true;
+                enemy.agent.isStopped = false;
                 enemy.setupHealth();
                 enemy.movement.StartChasing();              
             }

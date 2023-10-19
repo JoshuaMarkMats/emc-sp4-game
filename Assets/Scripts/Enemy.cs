@@ -17,8 +17,12 @@ public class Enemy : PoolableObject, IDamageable
     [SerializeField]
     private HealthBar healthBar;
 
-    private Coroutine lookCoroutine, stayStillCoroutine;
-    private const string ATTACK_TRIGGER = "Attack";
+    [SerializeField]
+    private float deathDuration = 3;
+    public bool isAlive = true;
+
+    private Coroutine lookCoroutine, stayStillCoroutine, deathCoroutine;
+    private const string ATTACK_TRIGGER = "Attack", DEATH_TRIGGER = "ToggleDeath";
 
     private void Awake()
     {
@@ -26,34 +30,48 @@ public class Enemy : PoolableObject, IDamageable
         
     }
 
+    private void Update()
+    {
+        if (isAlive && health <= 0)
+        {
+            deathCoroutine = StartCoroutine(Death(deathDuration));
+        }
+    }
+
     private void OnAttack(IDamageable Target)
     {
-        animator.SetTrigger(ATTACK_TRIGGER);
-
-        stayStillCoroutine = StartCoroutine(StayStill(attackRadius.attackCooldown));
-
-        if (lookCoroutine!= null )
+        if (isAlive)
         {
-            StopCoroutine(lookCoroutine);
-        }
+            animator.SetTrigger(ATTACK_TRIGGER);
 
-        lookCoroutine = StartCoroutine(LookAt(Target.GetTransform()));
+            stayStillCoroutine = StartCoroutine(StayStill(attackRadius.attackCooldown));
+
+            if (lookCoroutine != null)
+            {
+                StopCoroutine(lookCoroutine);
+            }
+
+            lookCoroutine = StartCoroutine(LookAt(Target.GetTransform()));
+        }
     }
 
     private IEnumerator LookAt(Transform Target)
     {
-        Quaternion lookRotation = Quaternion.LookRotation(Target.position - transform.position);
-        float time = 0;
-
-        while (time < 1)
+        if (isAlive)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, time);
+            Quaternion lookRotation = Quaternion.LookRotation(Target.position - transform.position);
+            float time = 0;
 
-            time += Time.deltaTime * 2;
-            yield return null;
+            while (time < 1)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, time);
+
+                time += Time.deltaTime * 2;
+                yield return null;
+            }
+
+            transform.rotation = lookRotation;
         }
-
-        transform.rotation = lookRotation;
     }
     
     //stay still while attacking
@@ -103,16 +121,35 @@ public class Enemy : PoolableObject, IDamageable
 
     public void TakeDamage(int Damage)
     {
-        health -= Damage;
-        healthBar.SetHealth(health);
-        if (health <= 0)
+        if (health > Damage)
         {
-            gameObject.SetActive(false);
+            health -= Damage;
+            healthBar.SetHealth(health);
         }
+        else
+        {
+            health = 0;
+            healthBar.SetHealth(0);
+        }
+            
     }
 
     public Transform GetTransform()
     {
         return transform;
+    }
+
+    //allow time for death before thanos snap
+    private IEnumerator Death(float duration)
+    {
+        isAlive = false;
+        if (stayStillCoroutine != null)
+        {
+            StopCoroutine(stayStillCoroutine);
+        }
+        agent.enabled = false;
+        animator.SetTrigger(DEATH_TRIGGER);
+        yield return new WaitForSeconds(duration);
+        gameObject.SetActive(false);
     }
 }

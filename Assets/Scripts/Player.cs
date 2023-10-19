@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player : MonoBehaviour, IDamageable
 {
@@ -8,7 +9,7 @@ public class Player : MonoBehaviour, IDamageable
     private AttackRadius attackRadius;
     [SerializeField]
     private Animator animator;
-    private Coroutine lookCoroutine;
+    private Coroutine lookCoroutine, deathCoroutine;
 
     [SerializeField]
     private HealthBar healthBar;
@@ -16,7 +17,12 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField]
     private int Health = 300;
 
-    private const string ATTACK_TRIGGER = "Attack";
+    [SerializeField]
+    private float deathDuration = 3;
+    [SerializeField]
+    private bool isAlive = true;
+
+    private const string ATTACK_TRIGGER = "Attack", DEATH_TRIGGER = "ToggleDeath";
 
     private void Awake()
     {
@@ -24,46 +30,75 @@ public class Player : MonoBehaviour, IDamageable
         healthBar.SetMaxHealth(Health);
     }
 
+    private void Update()
+    {
+        if (isAlive && Health <= 0)
+        {
+            deathCoroutine = StartCoroutine(Death(deathDuration));
+        }
+    }
+
     private void OnAttack(IDamageable Target)
     {
-        animator.SetTrigger(ATTACK_TRIGGER);
-
-        if (lookCoroutine != null)
+        if (isAlive)
         {
-            StopCoroutine(lookCoroutine);
-        }
+            animator.SetTrigger(ATTACK_TRIGGER);
 
-        lookCoroutine = StartCoroutine(LookAt(Target.GetTransform()));
+            if (lookCoroutine != null)
+            {
+                StopCoroutine(lookCoroutine);
+            }
+
+            lookCoroutine = StartCoroutine(LookAt(Target.GetTransform()));
+        }   
     }
 
     private IEnumerator LookAt(Transform Target)
     {
-        Quaternion lookRotation = Quaternion.LookRotation(Target.position - transform.position);
-        float time = 0;
-
-        while (time < 1)
+        if (isAlive)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, time);
+            Quaternion lookRotation = Quaternion.LookRotation(Target.position - transform.position);
+            float time = 0;
 
-            time += Time.deltaTime * 2;
-            yield return null;
+            while (time < 1)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, time);
+
+                time += Time.deltaTime * 2;
+                yield return null;
+            }
+
+            transform.rotation = lookRotation;
         }
-
-        transform.rotation = lookRotation;
     }
 
     public void TakeDamage(int Damage)
     {
-        Health -= Damage;
-        healthBar.SetHealth(Health);
-        if (Health <= 0)
+        if (Health > Damage)
         {
-            gameObject.SetActive(false);
+            Health -= Damage;
+            healthBar.SetHealth(Health);
         }
+        else
+        {
+            Health = 0;
+            healthBar.SetHealth(0);
+        }
+            
     }
 
     public Transform GetTransform()
     {
         return transform;
+    }
+
+    //allow time for death before thanos snap
+    private IEnumerator Death(float duration)
+    {
+        isAlive = false;
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+        animator.SetTrigger(DEATH_TRIGGER);
+        yield return new WaitForSeconds(duration);
+        gameObject.SetActive(false);
     }
 }

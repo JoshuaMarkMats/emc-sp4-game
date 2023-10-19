@@ -53,7 +53,7 @@ public class EnemyController : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(updateSpeed);
 
-        while (enabled)
+        while (enabled && agent.enabled)
         {
             agent.SetDestination(target.transform.position);
             yield return wait;
