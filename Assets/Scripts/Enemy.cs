@@ -83,14 +83,14 @@ public class Enemy : PoolableObject, IDamageable
 
     }
 
-    public void setupHealth()
+    public void SetMaxHealth()
     {
         healthBar.SetMaxHealth(health);
     }
 
     public virtual void OnEnable()
     {
-        SetupAgentFromConfiguration();  
+        SetupAgentFromConfiguration();
     }
 
     public override void OnDisable()

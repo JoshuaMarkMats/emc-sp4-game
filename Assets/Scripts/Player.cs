@@ -27,6 +27,10 @@ public class Player : MonoBehaviour, IDamageable
     private void Awake()
     {
         attackRadius.onAttack += OnAttack;
+    }
+
+    private void Start()
+    {
         healthBar.SetMaxHealth(Health);
     }
 

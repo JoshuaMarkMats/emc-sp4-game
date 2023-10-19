@@ -86,7 +86,7 @@ public class EnemySpawner : MonoBehaviour
                 enemy.movement.target = player;
                 enemy.agent.enabled = true;
                 enemy.agent.isStopped = false;
-                enemy.setupHealth();
+                enemy.SetMaxHealth();
                 enemy.movement.StartChasing();              
             }
             else

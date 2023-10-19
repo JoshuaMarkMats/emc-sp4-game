@@ -318,4 +318,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8d64de8fd57624d89dc8cf4040dd33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  healthBar: {fileID: 0}
