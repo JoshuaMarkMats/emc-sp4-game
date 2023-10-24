@@ -12,7 +12,10 @@ public class Player : MonoBehaviour, IDamageable
     private Coroutine lookCoroutine, deathCoroutine;
 
     [SerializeField]
-    private HealthBar healthBar;
+    private HealthBar healthBar;   
+    private ObjectPool damageNumbers;
+    [SerializeField]
+    private DamageNumber damageNumberObject;
 
     [SerializeField]
     private int Health = 300;
@@ -32,6 +35,7 @@ public class Player : MonoBehaviour, IDamageable
     private void Start()
     {
         healthBar.SetMaxHealth(Health);
+        damageNumbers = ObjectPool.CreateInstance(damageNumberObject, 20);
     }
 
     private void Update()
@@ -78,6 +82,20 @@ public class Player : MonoBehaviour, IDamageable
 
     public void TakeDamage(int Damage)
     {
+        if (isAlive)
+        {
+            DamageNumber damageNumber = (DamageNumber)damageNumbers.GetObject();
+            if (damageNumber != null)
+            {
+                damageNumber.SetValue(Damage);
+                damageNumber.SetStartPosition(transform.position);
+                
+
+            } 
+                
+                
+        }
+
         if (Health > Damage)
         {
             Health -= Damage;

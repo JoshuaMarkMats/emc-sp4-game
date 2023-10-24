@@ -16,6 +16,7 @@ public class Enemy : PoolableObject, IDamageable
 
     [SerializeField]
     private HealthBar healthBar;
+    public ObjectPool damageNumbers;
 
     [SerializeField]
     private float deathDuration = 3;
@@ -27,7 +28,6 @@ public class Enemy : PoolableObject, IDamageable
     private void Awake()
     {
         attackRadius.onAttack += OnAttack;
-        
     }
 
     private void Update()
@@ -121,6 +121,18 @@ public class Enemy : PoolableObject, IDamageable
 
     public void TakeDamage(int Damage)
     {
+        if (isAlive)
+        {
+            DamageNumber damageNumber = (DamageNumber)damageNumbers.GetObject();
+            if (damageNumber != null)
+            {
+                damageNumber.SetValue(Damage);
+                damageNumber.SetStartPosition(transform.position);
+
+
+            }
+        }
+
         if (health > Damage)
         {
             health -= Damage;

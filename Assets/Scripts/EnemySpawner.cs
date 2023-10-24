@@ -19,9 +19,13 @@ public class EnemySpawner : MonoBehaviour
     private NavMeshTriangulation triangulation;
     private Dictionary<int, ObjectPool> enemyObjectPool = new Dictionary<int, ObjectPool>();
 
+    private ObjectPool damageNumbers;
+    [SerializeField]
+    private DamageNumber damageNumberObject;
+
     public void Awake()
     {
-
+        damageNumbers = ObjectPool.CreateInstance(damageNumberObject, 10);
         for (int i = 0; i<enemyPrefab.Count; i++)
         {
             enemyObjectPool.Add(i, ObjectPool.CreateInstance(enemyPrefab[i], numberOfEnemiesToSpawn));
@@ -87,6 +91,7 @@ public class EnemySpawner : MonoBehaviour
                 enemy.agent.enabled = true;
                 enemy.agent.isStopped = false;
                 enemy.SetMaxHealth();
+                enemy.damageNumbers = damageNumbers;
                 enemy.movement.StartChasing();              
             }
             else
