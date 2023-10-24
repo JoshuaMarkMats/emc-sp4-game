@@ -38,6 +38,8 @@ public class Enemy : PoolableObject, IDamageable
         }
     }
 
+    public bool IsAlive { get { return isAlive; } }
+
     private void OnAttack(IDamageable Target)
     {
         if (isAlive)
@@ -79,7 +81,8 @@ public class Enemy : PoolableObject, IDamageable
     {
         agent.isStopped= true;
         yield return new WaitForSeconds(duration);
-        agent.isStopped = false;
+        if (agent.enabled)
+            agent.isStopped = false;
 
     }
 

@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 972691361495765927, guid: d00985cda8b80bb4180191f34dd12db0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278231295
+      objectReference: {fileID: 0}
     - target: {fileID: 2316638230473416356, guid: d00985cda8b80bb4180191f34dd12db0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -108,6 +112,18 @@ PrefabInstance:
       propertyPath: damageNumberType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5491910334571828642, guid: d00985cda8b80bb4180191f34dd12db0, type: 3}
+      propertyPath: randomizePositionAmount.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491910334571828642, guid: d00985cda8b80bb4180191f34dd12db0, type: 3}
+      propertyPath: randomizePositionAmount.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862203450224528546, guid: d00985cda8b80bb4180191f34dd12db0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2f8353c9c9d791444aa54bd2cb7cfd04, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

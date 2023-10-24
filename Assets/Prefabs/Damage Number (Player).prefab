@@ -226,7 +226,7 @@ MonoBehaviour:
   autoDestroyTime: 1
   damageText: {fileID: 972691361495765927}
   Offset: {x: 0, y: 6, z: 0}
-  randomizePositionAmount: {x: 1, y: 0, z: 1}
+  randomizePositionAmount: {x: 0.2, y: 0, z: 0.2}
   damageNumberType: 0
 --- !u!23 &4557491362255310268
 MeshRenderer:

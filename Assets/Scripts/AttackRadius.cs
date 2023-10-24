@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(SphereCollider))]
 public class AttackRadius : MonoBehaviour
@@ -18,11 +20,11 @@ public class AttackRadius : MonoBehaviour
         IDamageable damageable = other.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            Damageables.Add(damageable);
-            if (attackCoroutine == null)
+            if (damageable.IsAlive)
             {
-                attackCoroutine = StartCoroutine(Attack());
-            }
+                Damageables.Add(damageable);
+                attackCoroutine ??= StartCoroutine(Attack());
+            }           
         }
     }
 
@@ -38,12 +40,14 @@ public class AttackRadius : MonoBehaviour
                 attackCoroutine = null;
             }
         }
+
+        
     }
 
     //attack closest damageable
     private IEnumerator Attack()
     {
-        WaitForSeconds wait = new WaitForSeconds(attackCooldown);
+        WaitForSeconds wait = new(attackCooldown);
 
         yield return wait;
 

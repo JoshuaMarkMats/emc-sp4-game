@@ -46,6 +46,10 @@ public class Player : MonoBehaviour, IDamageable
         }
     }
 
+    public bool IsAlive { 
+        get { return isAlive; }
+    }
+
     private void OnAttack(IDamageable Target)
     {
         if (isAlive)
@@ -63,8 +67,6 @@ public class Player : MonoBehaviour, IDamageable
 
     private IEnumerator LookAt(Transform Target)
     {
-        if (isAlive)
-        {
             Quaternion lookRotation = Quaternion.LookRotation(Target.position - transform.position);
             float time = 0;
 
@@ -77,7 +79,7 @@ public class Player : MonoBehaviour, IDamageable
             }
 
             transform.rotation = lookRotation;
-        }
+
     }
 
     public void TakeDamage(int Damage)
@@ -118,6 +120,7 @@ public class Player : MonoBehaviour, IDamageable
     private IEnumerator Death(float duration)
     {
         isAlive = false;
+        attackRadius.enabled = false;
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
         animator.SetTrigger(DEATH_TRIGGER);
         yield return new WaitForSeconds(duration);
