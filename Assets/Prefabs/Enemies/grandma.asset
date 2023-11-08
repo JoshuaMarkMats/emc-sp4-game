@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92b7dbe0f47a7c40a0ee555b47004e6, type: 3}
   m_Name: grandma
   m_EditorClassIdentifier: 
-  health: 100
+  health: 30
   attackCooldown: 0.2
-  damage: 3
+  damage: 1
   attackRadius: 15
   isRanged: 1
   AIUpdateInterval: 0.1

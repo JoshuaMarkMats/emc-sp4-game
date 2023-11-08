@@ -2420,10 +2420,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 201860342}
-  numberOfEnemiesToSpawn: 1
+  numberOfEnemiesToSpawn: 12
   SpawnDelay: 1
   enemyPrefab:
+  - {fileID: 3421673358160514114, guid: 48f765c449bb3a44cb903bab04ea9684, type: 3}
+  - {fileID: 3992776581038665526, guid: 04816815533e3fb48af0685e72b860e5, type: 3}
   - {fileID: 809469042139892106, guid: c2d6af026cc808b4d97dd8bf83d8041d, type: 3}
+  - {fileID: 6528298188489481406, guid: 7095ba097dc2afd46968680c8ef6a205, type: 3}
+  - {fileID: 6437030702092221869, guid: 1b4e1689947d7384091041b5e1ad562d, type: 3}
+  - {fileID: 6904964642844436748, guid: 59e6c1947e903b34294ed9e458d66996, type: 3}
   enemySpawnMethod: 0
   enemyDiedEvent:
     m_PersistentCalls:

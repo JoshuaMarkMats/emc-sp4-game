@@ -66,10 +66,11 @@ public class RangedAttackRadius : AttackRadius
             }
             yield return Wait;
 
-            if (targetDamageable == null || !HasLineOfSight(targetDamageable.GetTransform())) 
+            if (targetDamageable == null || !HasLineOfSight(targetDamageable.GetTransform()))
             {
                 agent.isStopped = false;
                 attackCoroutine = null;
+                targetDamageable = null; //remove current target to stop the shooting
             }
 
             Damageables.RemoveAll(DisableDamageables);
