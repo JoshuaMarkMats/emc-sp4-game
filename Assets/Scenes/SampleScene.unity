@@ -2423,7 +2423,7 @@ MonoBehaviour:
   numberOfEnemiesToSpawn: 1
   SpawnDelay: 1
   enemyPrefab:
-  - {fileID: 4544240094007878049, guid: 5412d109a22eb0c40a3d7f58c8363d81, type: 3}
+  - {fileID: 809469042139892106, guid: c2d6af026cc808b4d97dd8bf83d8041d, type: 3}
   enemySpawnMethod: 0
   enemyDiedEvent:
     m_PersistentCalls:
