@@ -10,6 +10,8 @@ public class ClickToMove : MonoBehaviour
     [SerializeField]
     private Animator animator;
     private AgentLinkMover linkMover;
+    [SerializeField]
+    private LayerMask layerMask;
 
     private const string isWalking = "isWalking";
     private const string Jump = "Jump";
@@ -44,8 +46,12 @@ public class ClickToMove : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !Input.GetKey(KeyCode.LeftShift))
         {
             var ray = cam.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray.origin, ray.direction, out m_HitInfo))
+            if (Physics.Raycast(ray.origin, ray.direction, out m_HitInfo, float.MaxValue, layerMask))
+            {
                 m_Agent.destination = m_HitInfo.point;
+                Debug.Log(m_HitInfo.point);
+            }
+                
         }
         animator.SetBool(isWalking, m_Agent.velocity.magnitude > 0.01f);
     }

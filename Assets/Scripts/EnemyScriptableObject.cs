@@ -11,6 +11,7 @@ public class EnemyScriptableObject : ScriptableObject
     public float attackCooldown = 1f;
     public int damage = 5;
     public float attackRadius = 1.5f;
+    public bool isRanged = false;
 
     //NavMesh Configs
     public float AIUpdateInterval = 0.1f;

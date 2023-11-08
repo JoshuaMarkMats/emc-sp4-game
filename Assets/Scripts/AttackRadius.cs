@@ -7,15 +7,17 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(SphereCollider))]
 public class AttackRadius : MonoBehaviour
 {
-    private List<IDamageable> Damageables = new List<IDamageable>();
+    protected List<IDamageable> Damageables = new List<IDamageable>();
     public int damage = 10;
     public float attackCooldown = 0.5f;
     public delegate void AttackEvent(IDamageable Target);
     public AttackEvent onAttack;
-    private Coroutine attackCoroutine;
+    protected Coroutine attackCoroutine;
+
+    protected virtual void Awake() { }
 
     //damageables that enter range added to list; start attacking
-    void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         IDamageable damageable = other.GetComponent<IDamageable>();
         if (damageable != null)
@@ -29,7 +31,7 @@ public class AttackRadius : MonoBehaviour
     }
 
     //damageables that exit range added to list, stop attacking
-    private void OnTriggerExit(Collider other)
+    protected virtual void OnTriggerExit(Collider other)
     {
         IDamageable damageable = other.GetComponent<IDamageable>();
         if (damageable != null)
@@ -45,7 +47,7 @@ public class AttackRadius : MonoBehaviour
     }
 
     //attack closest damageable
-    private IEnumerator Attack()
+    protected virtual IEnumerator Attack()
     {
         WaitForSeconds wait = new(attackCooldown);
 
@@ -87,7 +89,7 @@ public class AttackRadius : MonoBehaviour
         attackCoroutine = null;      
     }
 
-    private bool DisableDamageables(IDamageable Damageable)
+    protected bool DisableDamageables(IDamageable Damageable)
     {
         return Damageable != null && !Damageable.GetTransform().gameObject.activeSelf;
     }
