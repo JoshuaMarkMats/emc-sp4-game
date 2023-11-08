@@ -71,4 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Large Files
 Assets/Models/Shock/shocktroop.fbx
+Assets/Models/SwiftShock/Ch35_nonPBR.fbx
