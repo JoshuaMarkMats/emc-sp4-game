@@ -12,6 +12,7 @@ public class AttackRadius : MonoBehaviour
     public float attackCooldown = 0.5f;
     public delegate void AttackEvent(IDamageable Target);
     public AttackEvent onAttack;
+    public SphereCollider sphereCollider;
     protected Coroutine attackCoroutine;
 
     protected virtual void Awake() { }

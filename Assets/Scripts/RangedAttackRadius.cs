@@ -22,12 +22,20 @@ public class RangedAttackRadius : AttackRadius
         base.Awake();
 
         //if all bullets miss and go into oblivion we'll not run out of bullets
-        bulletPool = ObjectPool.CreateInstance(bulletPrefab, Mathf.CeilToInt((1 / attackCooldown) * bulletPrefab.AutoDestroyTime));
+        //bulletPool = ObjectPool.CreateInstance(bulletPrefab, Mathf.CeilToInt((1 / attackCooldown) * bulletPrefab.AutoDestroyTime));
     }
 
     private void Start()
     {
         maxRange = GetComponent<SphereCollider>().radius;
+    }
+
+    public void CreateBulletPool()
+    {
+        if (bulletPool == null)
+        {
+            bulletPool = ObjectPool.CreateInstance(bulletPrefab, Mathf.CeilToInt((1 / attackCooldown) * bulletPrefab.AutoDestroyTime));
+        }
     }
 
     protected override IEnumerator Attack()

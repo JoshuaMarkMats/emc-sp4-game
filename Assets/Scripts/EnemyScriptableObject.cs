@@ -8,10 +8,8 @@ public class EnemyScriptableObject : ScriptableObject
 {
     //Stats
     public int health = 100;
-    public float attackCooldown = 1f;
-    public int damage = 5;
-    public float attackRadius = 1.5f;
-    public bool isRanged = false;
+    public Enemy Prefab;
+    public AttackScriptableObject AttackConfigurations;
 
     //NavMesh Configs
     public float AIUpdateInterval = 0.1f;
@@ -25,4 +23,22 @@ public class EnemyScriptableObject : ScriptableObject
     public float Radius = 0.5f;
     public float Speed = 3f;
     public float StoppingDistance = 0.5f;
+
+    public void SetupEnemy(Enemy enemy)
+    {
+        enemy.agent.acceleration = Acceleration;
+        enemy.agent.angularSpeed = AngularSpeed;
+        enemy.agent.areaMask = AreaMask;
+        enemy.agent.avoidancePriority = AvoidancePriority;
+        enemy.agent.baseOffset = BaseOffset;
+        enemy.agent.height = Height;
+        enemy.agent.radius = Radius;
+        enemy.agent.speed = Speed;
+        enemy.agent.stoppingDistance = StoppingDistance;
+
+        enemy.movement.updateSpeed = AIUpdateInterval;
+        enemy.health = health;
+
+        AttackConfigurations.SetupEnemy(enemy);
+    }
 }

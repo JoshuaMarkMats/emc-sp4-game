@@ -93,7 +93,7 @@ public class Enemy : PoolableObject, IDamageable
 
     public virtual void OnEnable()
     {
-        SetupAgentFromConfiguration();
+        //SetupAgentFromConfiguration();
     }
 
     public override void OnDisable()
