@@ -102,7 +102,7 @@ public class Enemy : PoolableObject, IDamageable
         agent.enabled = false;
     }
 
-    public virtual void SetupAgentFromConfiguration()
+    /*public virtual void SetupAgentFromConfiguration()
     {
         agent.acceleration = enemyScriptableObject.Acceleration;
         agent.angularSpeed= enemyScriptableObject.AngularSpeed;
@@ -120,7 +120,7 @@ public class Enemy : PoolableObject, IDamageable
         attackRadius.attackCooldown = enemyScriptableObject.attackCooldown;
         attackRadius.damage = enemyScriptableObject.damage;
         attackRadius.SetAttackRadius(enemyScriptableObject.attackRadius);
-    }
+    }*/
 
     public void TakeDamage(int Damage)
     {

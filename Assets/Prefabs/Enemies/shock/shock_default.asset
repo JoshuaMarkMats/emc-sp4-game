@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e92b7dbe0f47a7c40a0ee555b47004e6, type: 3}
-  m_Name: grandma
+  m_Name: shock_default
   m_EditorClassIdentifier: 
-  health: 30
-  attackCooldown: 0.2
-  damage: 1
-  attackRadius: 15
-  isRanged: 1
-  AIUpdateInterval: 0.1
+  health: 100
+  Prefab: {fileID: 6528298188489481406, guid: 7095ba097dc2afd46968680c8ef6a205, type: 3}
+  AttackConfigurations: {fileID: 11400000, guid: c36da5d452433e844bfa78d1d456b8f5, type: 2}
+  AIUpdateInterval: 0.5
   Acceleration: 8
   AngularSpeed: 120
   AreaMask: -1
   AvoidancePriority: 50
   BaseOffset: 0
-  Height: 1.9
+  Height: 3
   ObstacleAvoidanceType: 1
   Radius: 0.5
-  Speed: 1
+  Speed: 2.3
   StoppingDistance: 0.5

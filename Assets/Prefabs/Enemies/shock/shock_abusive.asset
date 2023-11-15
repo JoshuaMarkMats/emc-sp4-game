@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e92b7dbe0f47a7c40a0ee555b47004e6, type: 3}
-  m_Name: shock
+  m_Name: shock_abusive
   m_EditorClassIdentifier: 
   health: 100
-  attackCooldown: 1
-  damage: 10
-  attackRadius: 2
+  Prefab: {fileID: 6528298188489481406, guid: 7095ba097dc2afd46968680c8ef6a205, type: 3}
+  AttackConfigurations: {fileID: 11400000, guid: 4195faba8ff66c24dbacadc8d5f3217a, type: 2}
   AIUpdateInterval: 0.5
   Acceleration: 8
   AngularSpeed: 120
