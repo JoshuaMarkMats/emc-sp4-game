@@ -6,17 +6,41 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyController : MonoBehaviour
 {
-    public Transform target;
-    public float updateSpeed = 0.1f;
-    [SerializeField]
-    private Animator animator;
-    private AgentLinkMover linkMover;
-
-    private NavMeshAgent agent;
-
     private const string isMoving = "isMoving";
     private const string Jump = "Jump";
     private const string Landed = "Landed";
+
+    [SerializeField]
+    private Animator animator;
+
+    public EnemyState DefaultState;
+    private EnemyState _state;
+
+    public Transform target;
+    public float updateSpeed = 0.1f;
+    public float IdleLocationRadius = 4f;
+    public float IdleMovespeedMultiplier = 0.5f;
+
+    public delegate void StateChangeEvent(EnemyState oldState, EnemyState newState);
+    public StateChangeEvent OnStateChange;
+    public NavMeshTriangulation triangulation;
+
+    private int WaypointIndex = 0;
+    private Vector3[] waypoints = new Vector3[4];
+
+    private AgentLinkMover linkMover;
+    private NavMeshAgent agent;
+    private Coroutine followCoroutine;
+
+    public EnemyState State
+    {
+        get { return _state; }
+        set
+        {
+            OnStateChange?.Invoke(_state, value);
+            _state = value;
+        }
+    }
 
     private void Awake()
     {
@@ -26,6 +50,11 @@ public class EnemyController : MonoBehaviour
 
         linkMover.OnLinkStart += HandleLinkStart;
         linkMover.OnLinkEnd += HandleLinkEnd;
+    }
+
+    private void OnDisable()
+    {
+        _state = DefaultState;
     }
 
     private void HandleLinkStart()
@@ -38,15 +67,84 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger(Landed);
     }
 
+    private void HandleStateChange(EnemyState oldState, EnemyState newState)
+    {
+        if (oldState == newState)
+            return;
+
+        if (followCoroutine != null)
+            StopCoroutine(followCoroutine);
+
+        if (oldState == EnemyState.Idle)
+        {
+            agent.speed /= IdleMovespeedMultiplier;
+        }
+
+        switch (newState)
+        {
+            case EnemyState.Idle:
+                followCoroutine = StartCoroutine(DoIdleMotion());
+                break;
+            case EnemyState.Patrol: 
+                
+                break;
+            case EnemyState.Chase:
+                followCoroutine = StartCoroutine(followTarget());
+                break;
+        }
+    }
    
     public void StartChasing()
     {
-        StartCoroutine(followTarget());
+        followCoroutine = StartCoroutine(followTarget());
+    }
+
+    public void Spawn()
+    {
+        for (int i = 0; i < waypoints.Length; i++) 
+        {
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(triangulation.vertices[Random.Range(0, triangulation.vertices.Length)], out hit, 2f, agent.areaMask))
+            {
+                waypoints[i] = hit.position;
+            }
+            else
+            {
+                Debug.LogError("Unable to find position for navmesh newr Triangulation vertex!");
+            }
+        }
+        OnStateChange?.Invoke(EnemyState.Spawn, DefaultState);
     }
 
     void Update()
     {
         animator.SetBool(isMoving, agent.velocity.magnitude > 0.01f);
+    }
+
+    private IEnumerator DoIdleMotion()
+    {
+        WaitForSeconds wait = new(updateSpeed);
+
+        agent.speed *= IdleMovespeedMultiplier;
+
+        while (true)
+        {
+            if (!agent.enabled || !agent.isOnNavMesh)
+            {
+                yield return wait;
+            }
+            else if(agent.remainingDistance <= agent.stoppingDistance)
+            {
+                Vector2 point = Random.insideUnitCircle * IdleLocationRadius;
+                NavMeshHit hit;
+
+                if (NavMesh.SamplePosition(agent.transform.position + new Vector3(point.x,0,point.y), out hit, 2f, agent.areaMask))
+                {
+                    agent.SetDestination(hit.position);
+                }
+            }
+            yield return wait;
+        }
     }
 
     private IEnumerator followTarget()
