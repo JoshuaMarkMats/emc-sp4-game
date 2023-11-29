@@ -93,7 +93,7 @@ public class EnemySpawner : MonoBehaviour
                 enemy.agent.isStopped = false;
                 enemy.SetMaxHealth();
                 enemy.damageNumbers = damageNumbers;
-                enemy.movement.StartChasing();              
+                enemy.movement.Spawn();              
             }
             else
             {

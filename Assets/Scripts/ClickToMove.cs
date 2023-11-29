@@ -49,7 +49,6 @@ public class ClickToMove : MonoBehaviour
             if (Physics.Raycast(ray.origin, ray.direction, out m_HitInfo, float.MaxValue, layerMask))
             {
                 m_Agent.destination = m_HitInfo.point;
-                Debug.Log(m_HitInfo.point);
             }
                 
         }

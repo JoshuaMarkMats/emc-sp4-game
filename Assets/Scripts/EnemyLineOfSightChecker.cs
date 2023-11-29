@@ -23,9 +23,10 @@ public class EnemyLineOfSightChecker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Player player;
-        if (other.TryGetComponent<Player>(out player))
+        Debug.Log("player entered");
+        if (other.TryGetComponent<Player>(out Player player))
         {
+
             if (!CheckLineOfSight(player))
             {
                 checkForLineOfSightCoroutine = StartCoroutine(CheckForLineOfSight(player));
@@ -49,12 +50,7 @@ public class EnemyLineOfSightChecker : MonoBehaviour
         Vector3 direction = (player.transform.position - transform.position).normalized;
         if (Vector3.Dot(transform.forward,direction) >= Mathf.Cos(fieldOfView))
         {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, direction, out hit, sphereCollider.radius, lineOfSightLayers))
-            {
-                onGainSight?.Invoke(player);
-                return true;
-            }
+            onGainSight?.Invoke(player);
         }
         return false;
     }

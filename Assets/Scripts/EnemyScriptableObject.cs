@@ -10,6 +10,11 @@ public class EnemyScriptableObject : ScriptableObject
     public int health = 100;
     public Enemy Prefab;
     public AttackScriptableObject AttackConfigurations;
+    public float detectionRange = 5f;
+    public float fieldOfView = 90f;
+    public EnemyState DefaultState;
+    public float idleLocationRadius = 4f;
+    public float idleMovespeedMultiplier = 0.5f;
 
     //NavMesh Configs
     public float AIUpdateInterval = 0.1f;
@@ -34,9 +39,16 @@ public class EnemyScriptableObject : ScriptableObject
         enemy.agent.height = Height;
         enemy.agent.radius = Radius;
         enemy.agent.speed = Speed;
-        enemy.agent.stoppingDistance = StoppingDistance;
+        enemy.agent.stoppingDistance = StoppingDistance;       
 
+        enemy.movement.DefaultState = DefaultState;
+        enemy.movement.IdleLocationRadius = idleLocationRadius;
+        enemy.movement.IdleMovespeedMultiplier = idleMovespeedMultiplier;
         enemy.movement.updateSpeed = AIUpdateInterval;
+
+        enemy.movement.lineOfSightChecker.fieldOfView = fieldOfView;
+        enemy.movement.lineOfSightChecker.sphereCollider.radius = detectionRange;
+        
         enemy.health = health;
 
         AttackConfigurations.SetupEnemy(enemy);

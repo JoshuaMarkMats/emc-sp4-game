@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1625932945051005789, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: m_Radius
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2021350083307774109, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: m_Layer
@@ -253,6 +253,10 @@ PrefabInstance:
     - target: {fileID: 5274035154705341563, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: attackCooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725364758019493049, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: lineOfSightLayers.m_Bits
+      value: 257
       objectReference: {fileID: 0}
     - target: {fileID: 8722582321334250829, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: m_LocalScale.x

@@ -45,6 +45,8 @@ public class EnemyController : MonoBehaviour
 
     private void Awake()
     {
+        triangulation = NavMesh.CalculateTriangulation();
+
         agent = GetComponent<NavMeshAgent>();
 
         linkMover = GetComponent<AgentLinkMover>();
@@ -71,6 +73,7 @@ public class EnemyController : MonoBehaviour
 
     private void HandleGainSight(Player player)
     {
+        Debug.Log("Player Spotted!");
         State = EnemyState.Chase;
     }
 
@@ -135,6 +138,8 @@ public class EnemyController : MonoBehaviour
             {
                 Debug.LogError("Unable to find position for navmesh newr Triangulation vertex!");
             }
+
+            Debug.Log("New Waypoint Set at " + waypoints[i]);
         }
         OnStateChange?.Invoke(EnemyState.Spawn, DefaultState);
     }
