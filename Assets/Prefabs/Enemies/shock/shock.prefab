@@ -17,7 +17,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8438390681375943229, guid: 12f23b739e6ce8344ab0b48ad443492d, type: 3}
     - target: {fileID: 7762034111902549866, guid: fb952db955115e042a4b32842a3fd66d, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 568f704f8dc3c28418ca1d87402e0998, type: 2}
     - target: {fileID: 8860572439332101590, guid: fb952db955115e042a4b32842a3fd66d, type: 3}
@@ -174,7 +174,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &6333205544010034514
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -188,6 +188,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -216,6 +217,18 @@ PrefabInstance:
     - target: {fileID: 1271722196176428334, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: m_AgentTypeID
       value: 1479372276
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601744129997549738, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601744129997549738, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625932945051005789, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2021350083307774109, guid: 22a59cdde1eb41c4e80a88477c38299e, type: 3}
       propertyPath: m_Layer

@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
     public float IdleLocationRadius = 4f;
     public float IdleMovespeedMultiplier = 0.5f;
 
+    public EnemyLineOfSightChecker lineOfSightChecker;
     public delegate void StateChangeEvent(EnemyState oldState, EnemyState newState);
     public StateChangeEvent OnStateChange;
     public NavMeshTriangulation triangulation;
@@ -50,11 +51,32 @@ public class EnemyController : MonoBehaviour
 
         linkMover.OnLinkStart += HandleLinkStart;
         linkMover.OnLinkEnd += HandleLinkEnd;
+
+        lineOfSightChecker.onGainSight += HandleGainSight;
+        lineOfSightChecker.onLoseSight += HandleLoseSight;
+
+        OnStateChange += HandleStateChange;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLineStrip(waypoints, true);
     }
 
     private void OnDisable()
     {
         _state = DefaultState;
+    }
+
+    private void HandleGainSight(Player player)
+    {
+        State = EnemyState.Chase;
+    }
+
+    private void HandleLoseSight(Player player)
+    {
+        State = DefaultState;
     }
 
     private void HandleLinkStart()
@@ -85,8 +107,8 @@ public class EnemyController : MonoBehaviour
             case EnemyState.Idle:
                 followCoroutine = StartCoroutine(DoIdleMotion());
                 break;
-            case EnemyState.Patrol: 
-                
+            case EnemyState.Patrol:
+                followCoroutine = StartCoroutine(DoPatrolMotion());
                 break;
             case EnemyState.Chase:
                 followCoroutine = StartCoroutine(followTarget());
@@ -96,7 +118,8 @@ public class EnemyController : MonoBehaviour
    
     public void StartChasing()
     {
-        followCoroutine = StartCoroutine(followTarget());
+        //followCoroutine = StartCoroutine(followTarget());
+        State = EnemyState.Patrol;
     }
 
     public void Spawn()
@@ -142,6 +165,27 @@ public class EnemyController : MonoBehaviour
                 {
                     agent.SetDestination(hit.position);
                 }
+            }
+            yield return wait;
+        }
+    }
+
+    private IEnumerator DoPatrolMotion()
+    {
+        WaitForSeconds wait = new(updateSpeed);
+
+        yield return new WaitUntil(() => agent.enabled && agent.isOnNavMesh);
+        agent.SetDestination(waypoints[WaypointIndex]);
+
+        while (true)
+        {
+            if (agent.isOnNavMesh && agent.enabled && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                WaypointIndex++;
+
+                if(WaypointIndex >= waypoints.Length) 
+                    WaypointIndex = 0;
+                agent.SetDestination(waypoints[WaypointIndex]);
             }
             yield return wait;
         }

@@ -2423,7 +2423,7 @@ MonoBehaviour:
   numberOfEnemiesToSpawn: 2
   SpawnDelay: 1
   Enemies:
-  - {fileID: 11400000, guid: f7b38e4e75002fc4490bffd1353b9295, type: 2}
+  - {fileID: 11400000, guid: 0671bc3f69ebee74ba8754e5d32df61c, type: 2}
   enemySpawnMethod: 0
   enemyDiedEvent:
     m_PersistentCalls:
