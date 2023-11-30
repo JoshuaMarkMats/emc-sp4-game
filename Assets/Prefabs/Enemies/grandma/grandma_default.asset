@@ -15,6 +15,11 @@ MonoBehaviour:
   health: 30
   Prefab: {fileID: 809469042139892106, guid: c2d6af026cc808b4d97dd8bf83d8041d, type: 3}
   AttackConfigurations: {fileID: 11400000, guid: 673eb92950b7b434c9e1c42c896aa305, type: 2}
+  detectionRange: 15
+  fieldOfView: 90
+  DefaultState: 2
+  idleLocationRadius: 4
+  idleMovespeedMultiplier: 0.5
   AIUpdateInterval: 0.1
   Acceleration: 8
   AngularSpeed: 120

@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -328,6 +332,10 @@ PrefabInstance:
     - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_Name
       value: Catwalk_Side (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4739787111972294, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_LocalScale.y
@@ -460,6 +468,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -714,6 +726,10 @@ PrefabInstance:
     - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_Name
       value: Catwalk_Side
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4739787111972294, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_LocalScale.y
@@ -1052,6 +1068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -1122,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -1191,6 +1215,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -1324,6 +1352,10 @@ PrefabInstance:
     - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_Name
       value: CatwalkSteps_Both (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4534937360424682, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_LocalScale.x
@@ -1468,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -1537,6 +1573,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -1681,7 +1721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &480648191
 Transform:
   m_ObjectHideFlags: 0
@@ -1837,6 +1877,10 @@ PrefabInstance:
     - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_Name
       value: Catwalk_Side (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4739787111972294, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_LocalScale.y
@@ -2053,6 +2097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -2191,6 +2239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -2262,6 +2314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -2331,6 +2387,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -2455,6 +2515,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -3026,6 +3090,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -3147,6 +3215,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -3329,6 +3401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatwalkSteps_Both
       objectReference: {fileID: 0}
+    - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4534937360424682, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.96
@@ -3390,6 +3466,10 @@ PrefabInstance:
     - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_Name
       value: CatwalkSteps_Both (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4534937360424682, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_LocalScale.x
@@ -3461,6 +3541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -3530,6 +3614,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -3741,6 +3829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -3917,6 +4009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk
       objectReference: {fileID: 0}
+    - target: {fileID: 1988585577835398, guid: 35e028a14754d5b47b24ad3c8c9df24e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4117049621587070, guid: 35e028a14754d5b47b24ad3c8c9df24e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25
@@ -4043,6 +4139,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -4175,6 +4275,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -4315,6 +4419,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -4572,6 +4680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -4693,6 +4805,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -4816,6 +4932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -4887,6 +5007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -4956,6 +5080,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -5141,6 +5269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -5211,6 +5343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatwalkSteps_Both (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4534937360424682, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5280,6 +5416,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -5421,6 +5561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -5491,6 +5635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -5560,6 +5708,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -5687,6 +5839,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -5951,6 +6107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -6020,6 +6180,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -6118,6 +6282,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -6364,6 +6532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -6507,6 +6679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -6580,7 +6756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1651455331
 Transform:
   m_ObjectHideFlags: 0
@@ -6626,6 +6802,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -6697,6 +6877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Corner_Left
       objectReference: {fileID: 0}
+    - target: {fileID: 1954678597350468, guid: adfe71e1b8f5b3d4b93d56f28cf5b91c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4839196285144770, guid: adfe71e1b8f5b3d4b93d56f28cf5b91c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.04
@@ -6753,6 +6937,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -6893,6 +7081,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -7558,6 +7750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -7690,6 +7886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -7821,6 +8021,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -7967,6 +8171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -8098,6 +8306,10 @@ PrefabInstance:
     - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_Name
       value: Catwalk_Side (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4739787111972294, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_LocalScale.y
@@ -8292,6 +8504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatwalkSteps_Both (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1787391666964902, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4534937360424682, guid: 4f1a9ff5c56bbac41b3ecf0e16ca1978, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.05
@@ -8418,6 +8634,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -8560,6 +8780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -8630,6 +8854,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -8790,6 +9018,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -8859,6 +9091,10 @@ PrefabInstance:
     - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_Name
       value: Catwalk_Both (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
@@ -8930,6 +9166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catwalk_Both (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1711467430675014, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011160750741264, guid: c8b016b89e29afd4fa35c1638bfd4edf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -8999,6 +9239,10 @@ PrefabInstance:
     - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_Name
       value: Catwalk_Side (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103959779365030, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4739787111972294, guid: 61d88000b4fe25e4f84d1033044153b0, type: 3}
       propertyPath: m_LocalScale.y

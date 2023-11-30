@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 697162228074662720}
+    - target: {fileID: 4196578071405235254, guid: 5412d109a22eb0c40a3d7f58c8363d81, type: 3}
+      propertyPath: DefaultState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4544240094007878049, guid: 5412d109a22eb0c40a3d7f58c8363d81, type: 3}
       propertyPath: animator
       value: 
